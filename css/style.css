@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --primary: #D90429;
+    --secondary: #8D99AE;
+    --text-color: #FFF;
+    --text-secondary: #d1d4d5;
+    --text-tertiary: #000;
+}
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Information Form*/
+#event-discription{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/img/hrz-5.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 85vh; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+
+#disclaimer h2 {
+    font-size: 3.3em;
+    margin-bottom: 1em;
+    color: var(--primary);
+  }
+#disclaimer .about-event{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    max-width: 320px;
+}
+#disclaimer .about-frase{
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+    max-width: 320px;
+}
+#subscription-form{
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+}
+#subscription-form p{
+    font-size: 1.5em;
+    color: var(--text-tertiary);
+    margin-bottom: 1em;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label{
+    color: var(--text-tertiary);
+    margin-bottom: .3em;
+    font-weight: bold
+}
+.form-group input, .form-group select{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.btn{
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn:hover{
+    opacity: 1;
+}
+
+/*Beneficios*/
+/* Benefits section */
+#key-benefits h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 1.5em;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+  
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 8em 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+  
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+  
+#benefit-1 {
+    background-image: url("../img/sqr-1.jpg");
+    transition: background 1s;
+}
+  
+#benefit-2 {
+    background-image: url("../img/sqr-2.jpg");
+    transition: background 1s;
+}
+  
+#benefit-3 {
+    background-image: url("../img/sqr-3.jpg");
+    transition: background 1s;
+}
+
+  /*Benefits Hover*/
+#benefit-1:hover {
+    background-image: url("../img/hr-1f.jpg");
+}
+  
+#benefit-2:hover {
+    background-image: url("../img/hr-2f.jpg");
+}
+  
+#benefit-3:hover {
+    background-image: url("../img/hr-3f.jpg");
+}
+
+  /*Location*/
+#location{
+    margin-top: 6.5em;
+}
+
+#address{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/img/hrz-5.jpg');
+    justify-content: space-between;
+}
+
+#address-details {
+    color: var(--text-color);
+    align-items: center;
+    position: relative;
+    right: 21%;
+    text-align: center;
+    font-size: 1.3em;
+}
+#address-details h3{
+    margin-bottom: 15px;
+}
+
+#address-details i{
+    color: var(--primary);
+    font-size: 2.5em;
+}
+
+#address-details p{
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+/*Details Container*/
+#details{
+    width: 80%;
+    margin: 20vh auto;
+
+}
+.detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%; /*distancia os itens para nao ficarem colados*/
+    margin-bottom: 4em;
+}
+.detail img{
+    width: 50%;
+    box-shadow: -5px 10px 19px -16px rgba(0,0,0,0.75);
+}
+
+.detail h3{
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 600;
+
+}
+#detail-1 h3{
+    font-size: 3em;
+    font-weight: bold;
+}
+.detail-description{
+    width: 100%;
+    padding-left: 2%;
+}
+.detail-description ul{
+    list-style-position: inside;
+}
+.detail-description ul li{
+    margin-bottom: .4em;
+    font-size: 1.2em;
+}
+.detail-description ul li:last-child{
+    font-weight: bold;
+}
+#cta{
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/img/hrz-5.jpg');
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+#cta button{
+    width: 30%;
+}
