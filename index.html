@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>PlannerMoveis</title>
 </head>
 <body>
@@ -34,11 +35,11 @@
                     <input type="text" name="telefone" id="" placeholder="Numero de telefone ou whatsapp">
                 </div>
                 <div class="form-group">
-                    <label for="principal">Principal interesse</label>
+                    <label for="principal">Cômodos</label>
                     <select name="principal" id="">
                         <option value="" disabled selected>Selecione</option>
                         <option value="apartment">Apartamento</option>
-                        <option value="tine-house">Casa Compacta</option>
+                        <option value="tine-house">Jardim</option>
                         <option value="big-house">Mansão</option>
                         <option value="room">Quarto</option>
                         <option value="office">Escritorio</option>
@@ -83,7 +84,7 @@
     
     <section id="details">
         <div class="detail" id="detail-1">
-            <img src="/img/hrz-3.jpg" alt="decoration1">
+            <img src="/img/hrz-3.jpg" alt="decoration1" data-aos="fade-right" data-aos-delay="90">
             <div class="detail-description">
                 <h3>Conheça o nosso portifolio de ambientes unicos e pensados em você.</h3>
             </div>
@@ -99,10 +100,10 @@
                     <li>E muito mais...</li>
                 </ul>
             </div>
-            <img src="/img/hrz-4.jpg" alt="decoration1">
+            <img src="/img/hrz-4.jpg" alt="decoration1" data-aos="fade-left" data-aos-delay="90" >
         </div>
         <div class="detail" id="detail-3">
-            <img src="/img/hrz-5.jpg" alt="decoration1">
+            <img src="/img/hrz-5.jpg" alt="decoration1" data-aos="fade-right" data-aos-delay="90">
             <div class="detail-description">
                 <h3>Moveis modernos, com qualidade e personalizados a seu estilo.</h3>
             </div>
@@ -112,6 +113,25 @@
         <h3>Gostou? Então fale ja com nossos atendentes:</h3>
         <button class="btn">Contato</button>
     </section>
+    <footer id="footer">
+        <h3>PlannerMoveis</h3>
+        <p>A evolução da decoração de interiores</p>
+        <div class="footer-text">
+            <p><span>Entre em contato:</span>             central@plannermoveis.com.br</p>       
+            <p><span>Ou pelo telefone:</span>             (55)99990-9999</p>
+        </div>
+      <div class="footer-line"></div>
+      <div class="rodape">
+        <p>Direitos reservados, conteudo para fins de estudo nenhuma informação e real ou fere alguma entidade fisica.</p>
+        <p> &copy;ClaudianeCS, 2023, Rio Grande do Norte-RN, Brasil.</p>      
+      </div>
+    </footer>
 
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
-</html>
+</html> 
